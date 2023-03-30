@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="min.css/bootstrap.min.css">
+    <script src="mis/bootstrap.bundle.min.js"></script>
+
+    <script
+     src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <script type="text/javascript">
+        function sendEmail() {
+            Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "cletomedel77@gmail.com",
+                    Password: "92A64505AB79CA43F57365D82DDEEA6E69DB",
+                    To: 'cletomedel77@gmail.com',
+                    From: "cletomedel77@gmail.com",
+                    Subject: "que onda",
+                    Body: "Well that was easy!!",
+                })
+                .then(function (message) {
+                    alert("mail sent successfully")
+                });
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+    
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo" src="https://www.chevrolet.com.mx/content/dam/chevrolet/na/mx/es/index/pickups-and-trucks/2023-cheyenne/colorizer/01-images/gris-tiburon-v2.jpg?imwidth=960" width="150px" height="150px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href=>inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Resources.html">Resources</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>   
+              <li class="nav-item">
+                <a class="nav-link" href="#"><button>inicio</button></a>
+              </li> 
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br></br> 
+      <br><br> 
+      <br><br> 
+      <br><br> 
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <center><div class="carousel-item active">
+        <img src="tics/cesar.jpg"  class="d-block" style="width:55%" width="300px" height="450px">
+      </div></center>
+    <center><div class="carousel-item">
+        <img src="tics/65.jpg"  class="d-block" style="width:55%" width="150px" height="320px">
+      </div></center>
+    <center><div class="carousel-item">
+        <img src="tics/12.jpg"  class="d-block" style="width:55%" width="150px" height="320px">
+      </div></center>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+    <br></br> 
+      <br><br> 
+       
+      <div class="container mt-3">
+        <h2>Inline Forms</h2>
+        <p>If you want your form elements to appear side by side, use .row and .col:</p>
+        <form method="post">
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Enter email" name="email">
+            </div>
+            <div class="col">
+              <button type="button" value="send Email" onclick="sendEmail()">enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <br></br> 
+      <br></br> 
+      <br></br> 
+      <br></br> 
+
+    
+    <h1> Mi Primer Pagina Este Semestre </h1>
+    <h2>Heading level 2</h2>
+    <h3>Heading level 3</h3>
+    <h4>Heading level 4</h4>
+    <h5>Heading level 5</h5>
+    <h6>Heading level 6</h6>  <!-- Este es un comentario -->
+
+    <p>ESte es un parrafo</p>
+    <p>ESte es un parrafo</p>
+    <p>ESte es un parrafo</p>
+    <p>ESte es un parrafo</p>
+
+    <br></br> 
+    <br></br> 
+    <br></br> 
+    <br></br> 
+
+
+    <!-- Este es un formulario-->
+    <form>
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="fname" placeholder="Nombre"><br><br>
+        <label>Apellido</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Apellido"><br><br>
+        <label>Edad</label>
+        <input type="number" id="age" name="age" placeholder="Edad" min="18" max="35"><br><br>
+        <label>Email</label>
+        <input type="email" id="email" name="email" placeholder="Correo"><br><br>
+        <label>Contraseña</label>
+        <input type="password" id="password" name="password" placeholder="Contraseña"><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <br></br> 
+    <br></br> 
+    <br></br> 
+
+    <img src="tics/k 3.jpg" alt="" height="150px" width="150px">
+    <br></br> 
+    <br></br> 
+    <br></br> 
+
+    <section class="video">
+        <iframe width="300" height="200" src="https://www.youtube.com/watch?v=W4_4rOddHKo" title="Millonario Más Flow Más Cash (feat. Cartel de Santa)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <article class="publish">
+            <h3>
+                Publish your blog in minutes
+            </h3>
+            <p>
+                Your blog is your most powerful asset to build, engage, and retain a loyal
+                audience. But you don’t have hours to create content that may or may not
+                work.
+            </p>
+            <form action="">
+                <p>Start publishing today:</p>
+                <div>
+                    <input type="text" placeholder="Enter email">
+                    <button>Start</button>
+                </div>
+            </form>
+        </article>
+    </section>
+    <br></br> 
+    <br></br> 
+    <br></br> 
+    <br></br> 
+
+    <section class="features">
+        <article class="feature-card">
+            <div class="feature-content">
+                <figure>
+                    <img src="tics/karely 1.avif" alt="">
+                </figure>
+            <h3>Titulo 1</h3>
+            <p>Este es un parrafo</p>
+            <a href="">Publica instantaneamente</a>
+        </div>
+        <div class="feature-image">
+            <figure>
+                <img height="150px" width="150px"src="tics" alt="">
+            </figure>
+        </div>
+        </article><br><br>
+       
+        <article class="feature-card">
+            <div class="feature-content">
+                <figure>
+                    <img src="tics/karely 2.jpg" alt="">
+                </figure>
+            <h3>Titulo 1</h3>
+            <p>Este es un parrafo</p>
+            <a href="">Publica instantaneamente</a>
+        </div>
+        <div class="https://es.nissanusa.com/content/dam/Nissan/us/vehicles/gtr/2023/overview/cards/2023-nissan-gtr-solid-red-driving-on-track-overhead-view.jpg">
+            <figure>
+                <img height="150px" width="150px"src="g" alt="">
+            </figure>
+        </div>
+        </article><br><br>
+
+        <article class="feature-card">
+            <div class="feature-content">
+                <figure>
+                    <img src="https://es.nissanusa.com/content/dam/Nissan/us/experience_nissan/newsevents/skyline-to-gt-r/2018-Nissan-GTR-in-black.jpg.ximg.l_6_m.smart.jpg" alt="">
+                </figure>
+            <h3>Titulo 1</h3>
+            <p>Este es un parrafo</p>
+            <a href="">Publica instantaneamente</a>
+        </div>
+        <div class="https://es.nissanusa.com/content/dam/Nissan/us/vehicles/gtr/2023/overview/cards/2023-nissan-gtr-solid-red-driving-on-track-overhead-view.jpg">
+            <figure>
+                <img height="150px" width="250px"src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/subasta-nissan-skyline-gt-r-r34-v-spec-ii-nur-2002-1625669690.jpg?crop=1.00xw:1.00xh;0,0&resize=480:*" alt="">
+            </figure>
+        </div>
+        </article><br><br>
+
+        <article class="feature-card">
+            <div class="feature-content">
+                <figure>
+                    <img src="tics/tvazteca.brightspotcdn.jpg" alt="">
+                </figure>
+            <h3>Titulo 1</h3>
+            <p>Este es un parrafo</p>
+            <a href="">Publica instantaneamente</a>
+        </div>
+        <div class="https://es.nissanusa.com/content/dam/Nissan/us/vehicles/gtr/2023/overview/cards/2023-nissan-gtr-solid-red-driving-on-track-overhead-view.jpg">
+            <figure>
+                <img height="150px" width="250px"src="https://elcomercio.pe/resizer/sIOPufMTZicq2iUBf0tjDdVhbsA=/1200x900/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/DMO5CKLMIZG7RJP5YS77GZMDM4.jpg" alt="">
+            </figure>
+        </div>
+        </article><br><br>   
+    </section>
+    <br></br> 
+    <br></br> 
+    <br></br> 
+    <br></br> 
+    <br></br> 
+ 
+    <section class="por">
+<article class="por-one">
+            <div class="por-eleven">
+            <h1>¡toyota supra el mas rapido del mercado !</h1>
+            <p>
+                "El Toyota Supra es un automóvil deportivo de alto rendimiento producido por Toyota Motor Corporation. La primera generación del Supra fue introducida en 1978 y estaba basada en el Toyota Celica, mientras que las generaciones posteriores fueron desarrolladas de manera independiente."
+            </p>
+            <button>-inicio-</button>
+        </div>
+        <div class="por-img">
+            <figure>
+                <img height="150px" width="150px" src="https://img.automexico.com/2020/03/10/VleRj3I8/e80596d1-2020-toyota-gr-supra-47-1000x600-27ae.jpg" alt="">
+            </figure>
+        </div>
+        </article>
+    </section>
+    <br></br> 
+    <br></br> 
+    <br></br> 
+    <br></br> 
+    <br></br> 
+
+
+    <section class="medel">
+        <article class="cleto">
+                    <div class="el rayo">
+                    <center><h1>--toyota supra--</h1></center>
+                    <center><p>noticia</p></center>
+                    <center><button >Start</button></center>
+                    </div>
+                </article>
+                <br><br>
+                <div class="L1">
+                    <article>
+                <div class="L1-LL1">
+                    <figure>
+                    <img width="150" height="150"src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/2nd-Toyota-Supra.jpg/320px-2nd-Toyota-Supra.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="L1-LL1-LL1">
+                    <h1>--inicio --</h1>
+                    <p>El Supra dio en realidad sus primeros pasos en el mercado japonés como Celica XX (Celica Supra en otros mercados) en 1978</p>
+                    <a href="">Publica instantaneamente</a>
+                </div>
+            </article>
+        </div>
+        <br></br> 
+        <br></br> 
+
+        <div class="L1">
+            <article>
+        <div class="L1-LL1">
+            <figure>
+            <img width="150" height="150"src="https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2022/05/velocidad-maxima-toyota-supra-mk4-2696133.jpg" alt="">
+            </figure>
+        </div>
+        <div class="L1-LL1-LL1">
+            <h1>--Qué velocidad alcanza el Supra?--</h1>
+            <p>
+                Equipado con un turbocompresor de doble entrada, una inyección directa de combustible de alta precisión y un control de válvulas variable, desarrolla 340 CV DIN y 500 Nm de par para una impresionante aceleración de cero a 100 km/h en 4., segundos y una velocidad punta de 250 km/h.</p>
+            <a href="">Publica instantaneamente</a>
+        </div>
+    </article>
+</div>
+<br></br> 
+<br></br> 
+<br></br> 
+
+
+<div class="L1">
+    <article>
+<div class="L1-LL1">
+    <figure>
+    <img width="150" height="150"src="data:image/jpeg;base64,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" alt="">
+    </figure>
+</div>
+<div class="L1-LL1-LL1">
+    <h1>--precio--</h1>
+    <p>
+        Supra 2023 de TOYOTA en el segmento Auto/Deportivo, cuenta con 1 versiones disponibles las cuales son: GR Supra $1,428,900.00.
+        
+        </p>
+    <a href="">Publica instantaneamente</a>
+</div>
+</article>
+</div>
+<br></br> 
+<br></br> 
+
+
+
+<div class="L1">
+    <article>
+<div class="L1-LL1">
+    <figure>
+    <img width="150" height="150"src="http://www.101racing.es/wp-content/uploads/2014/10/toyota-supra-m%C3%A1s-rapido-del-mundo.jpg" alt="">
+    </figure>
+</div>
+<div class="L1-LL1-LL1">
+    <h1>--El Toyota Supra más rápido del mundo: 0 a 387 km/h en 6,05 segundos--</h1>
+    <p>En el circuito de Bahrein, este Supra modificado ha sido capaz de acelerar de 0 a 387 km/h en 6,05 segundos. Realmente no sabemos muy bien lo que lleva bajo el capó, pero sabemos que se trata de un Toyota no apto para circular en la vía pública que cuenta con un motor 2jz turbo monotec tuneado al máximo. Sin duda el Toyota Supra más rápido del mundo hasta la fecha. Conoce los secretos del motor de la mano de 101Racing.</p>
+    <a href="">Hola</a>
+</div>
+</article>
+</div>
+<br></br> 
+<br></br> 
+<br></br> 
+
+</section>
+</body>
+</html>
